@@ -1,38 +1,41 @@
 import Calendar from 'react-calendar';
+import {useState} from 'react'
 import 'react-calendar/dist/Calendar.css';
 import '../Schedule/calendar.css'
 import '../Schedule/schedule.css'
 
 
 function Schedule (){
-
     const active =()=>{
         const show_btn = document.querySelector('.show_btn');
         const scheduler = document.querySelector('.scheduler');
-        
-        scheduler.classList.toggle('-translate-x-1');   
+        scheduler.classList.toggle('translate-x-full');  
+
     }
     const active_btn =()=>{
         const show_btn = document.querySelector('.show_btn');
         
-        show_btn.classList.toggle('translate-x-[-24rem]');   
+        show_btn.classList.toggle('translate-x-[-25rem]');   
     }
     return (
        <>
-        <div className="hidden lg:flex show_btn bg-blue-200 fixed right-0 rounded-3xl mt-96 mr-4 hover:scale-125 ease-in-out duration-150 cursor-pointer
-        transform -translate-x-full transition duration-200 ease-in-out translate-x-0"
-         onClick={()=>{active();active_btn()}}>
+        <div className="hidden lg:flex show_btn bg-blue-200 fixed right-0 rounded-3xl mt-96 hover:scale-125 ease-in-out duration-150 cursor-pointer
+        transform -translate-x-full transition duration-200 ease-in-out"
+         onClick={()=>{
+            active();
+            active_btn();
+             }}>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 m-1" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
             </svg>
         </div>
 
-        <div className="scheduler fixed top-0 right-0 z-10 transform -translate-x-full transition duration-200 ease-in-out translate-x-full">
+        <div className="scheduler fixed top-0 right-0 z-10 transform translate-x-full transition duration-200 ease-in-out">
 
         <div className="min-h-screen rounded-xl background"> 
             <div className="flex flex-col">
 
-            <div className="flex flex-row items-center space-x-4 pt-8 ml-32">
+            <div className="flex flex-row items-center space-x-4 pt-8 mx-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                 </svg>

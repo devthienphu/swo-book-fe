@@ -1,13 +1,11 @@
 import { useNavigate } from 'react-router-dom'
 import Cards from '../../components/Cards/cards';
-import Courses from '../../components/Course/courses';
 import Footer from '../../components/Footer/footer';
 import Header from '../../components/Header/header';
 import Schedule from '../../components/Schedule/schedule';
 import img1 from '../../../img/img1.png'
 const Coursespage = () => {
     const navigate=useNavigate();
-    
     return (
         <div>
             <div className="flex flex-row ">

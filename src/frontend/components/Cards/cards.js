@@ -28,7 +28,7 @@ const Cards = () => {
             {
                 basicCourse.map((course,index)=>(
 
-                <div key={index} onClick={()=>{navigate('/courses')}} className="h-36 w-72 rounded-lg items-center p-10 px-16 bg-gradient-to-br from-cyan-400 to-blue-600 text-white cursor-pointer hover:from-indigo-500 hover:to-pink-500">
+                <div key={index} onClick={()=>{navigate('/course')}} className="h-36 w-72 rounded-lg items-center p-10 px-16 bg-gradient-to-br from-cyan-400 to-blue-600 text-white cursor-pointer hover:from-indigo-500 hover:to-pink-500">
                     <p className="text-center text-2xl font-semibold">{course.name}</p>
                     <p className="text-center text-md">{course.info}</p>
                 </div>
@@ -44,7 +44,7 @@ const Cards = () => {
                 {
                     advanceCourse.map((Adcourse,index)=>(
 
-                    <div key={index} onClick={()=>{navigate('/courses')}} className="flex items-center justify-center hover:transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
+                    <div key={index} onClick={()=>{navigate('/course')}} className="flex items-center justify-center hover:transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
                         <img alt="" className="rounded-lg w-72" src={Adcourse.image} ></img>
                     </div>
                     ))
@@ -57,7 +57,7 @@ const Cards = () => {
                 {
                     advanceCourse.map((Adcourse,index)=>(
 
-                    <div key={index} onClick={()=>{navigate('/courses')}} className="flex items-center justify-center hover:transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
+                    <div key={index} onClick={()=>{navigate('/course')}} className="flex items-center justify-center hover:transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
                         <img alt="" className="rounded-lg w-72" src={Adcourse.image} ></img>
                     </div>
                     ))
