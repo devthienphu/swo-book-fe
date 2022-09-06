@@ -9,11 +9,11 @@ export const StepContext = createContext();
 
 const Learning = () => {
 
-    const[step,setStep]= useState(null);
+    // const[step,setStep]= useState(null);
     
     return (
        <>
-       <StepContext.Provider value={{step, setStep}}>
+       {/* <StepContext.Provider value={{step, setStep}}> */}
         <LearningHeader/>
             
             {/* video */}
@@ -38,7 +38,7 @@ const Learning = () => {
             </div>
             <Comment/>
         <LearningFooter/>
-       </StepContext.Provider>
+       {/* </StepContext.Provider> */}
       
        </>
     );

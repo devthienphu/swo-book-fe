@@ -7,8 +7,8 @@ import {lession_for_newbie} from '../../../backend/data'
 
 
 const LearningFooter = () => {
-    const [isOpen, setIsOpen] = useState(false)
-
+    // const [isOpen, setIsOpen] = useState(false)
+    //onClick={() => setIsOpen((isOpen)=>!isOpen)}
     return (
        <>
         <div className="flex flex-row gap-4 py-1 bg-gray-100 fixed bottom-0 right-0 left-0 border-t-4 border-solid border-gray-100/75">
@@ -34,7 +34,7 @@ const LearningFooter = () => {
 
                 <Menu as="div" className="relative inline-block text-left px-2 ">
                     <div>
-                        <Menu.Button onClick={() => setIsOpen((isOpen)=>!isOpen)} className="inline-flex justify-center w-full items-center py-1">
+                        <Menu.Button  className="inline-flex justify-center w-full items-center py-1">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 p-2 bg-white rounded-full" viewBox="0 0 20 20" fill="currentColor">
                                 <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                             </svg>
@@ -43,7 +43,7 @@ const LearningFooter = () => {
 
                     <Transition
                         as={Fragment}
-                        show ={isOpen}
+                        // show ={isOpen}
                         enter="transition ease-out duration-100"
                         enterFrom="transform opacity-0 scale-95"
                         enterTo="transform opacity-100 scale-100"
