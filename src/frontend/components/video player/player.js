@@ -6,8 +6,8 @@ const defautLink="https://www.youtube.com/embed/CbUjGxnJiVo?autoplay=1&mute=0&co
 const Player = () => {
     
     const url = useSelector((state) => state.videoSelector.video_url)
-
     // const {step,setStep} =useContext(StepContext)
+    
     return (
        <>
         <div className="w-full relative bg-black mt-12">

@@ -4,8 +4,8 @@ const MainTitle = () => {
     return (
     <>
         <div className="flex items-center hidden lg:flex">
-            <img className="ml-4 h-9 w-9 rounded-lg" alt="icon" src="https://static.fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png"></img>
-            <p className="px-4 font-bold text-sm">Học Lập Trình Để Đi Làm</p>
+            <img className="ml-4 h-12 w-12 rounded-lg" alt="icon" src="https://www.softwareone.com/-/media/images/logos/softwareone-logo-blk.svg?iar=0&hash=6A277FF39328B4D79A071F4A9F95F301"></img>
+            <p className="px-4 font-bold text-lg">SoftwareOne Book Store</p>
         </div>
     </>
     );

@@ -1,14 +1,24 @@
 import React from 'react';
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
-import {useState} from 'react'
+import { useDispatch} from 'react-redux';
+import { useEffect } from 'react';
 import LearningMenu from '../Menu/learningMenu';
 import {lession_for_newbie} from '../../../backend/data'
+import {changeUrl} from '../../VideoSelector/videoSelectorSlice'
 
 
 const LearningFooter = () => {
-    // const [isOpen, setIsOpen] = useState(false)
-    //onClick={() => setIsOpen((isOpen)=>!isOpen)}
+
+    const dispatch = useDispatch();
+
+    useEffect(()=>{
+        dispatch(changeUrl({
+            title:lession_for_newbie[0].data.course.title,
+            video_url:lession_for_newbie[0].data.course.video
+        }))
+    },[])
+    
     return (
        <>
         <div className="flex flex-row gap-4 py-1 bg-gray-100 fixed bottom-0 right-0 left-0 border-t-4 border-solid border-gray-100/75">
@@ -52,7 +62,7 @@ const LearningFooter = () => {
                         leaveTo="transform opacity-0 scale-95"
                     >   
                         
-                        <Menu.Items className="src-bar overflow-y-scroll overflow-hidden max-h-[40rem] h-[40rem] origin-top-right absolute p-2 right-0 bottom-14 mt-2 w-96 rounded-xl shadow-lg drop-shadow-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <Menu.Items className="src-bar overflow-y-scroll overflow-hidden max-h-[37rem] h-[40rem] origin-top-right absolute p-2 right-0 bottom-14 mt-2 w-96 rounded-xl shadow-lg drop-shadow-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                         <div className="py-1 divide-y divide-slate-100 ">
                             <div className="flex flex-row justify-between p-2 px-4">
                                 <p className="font-medium text-gray-900 text-lg">Nội dung khóa học</p>

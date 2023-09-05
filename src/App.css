@@ -63,3 +63,7 @@
   background-clip: content-box;
   background-color: #8070d4;
 }
+
+.bg{
+  background:radial-gradient(at 30% 120%,rgba(62,0,255,.15) 5%,transparent 35%),radial-gradient(at 69% 180%,rgba(0,222,255,.2) 10%,transparent 50%)
+}

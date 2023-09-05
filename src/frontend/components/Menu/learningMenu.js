@@ -9,29 +9,11 @@ import videoSelectorSlice from '../../VideoSelector/videoSelectorSlice'
 import {StepContext} from '../../Pages/learning/learning'
 import { changeUrl } from '../../VideoSelector/videoSelectorSlice'
 
-// onClick={() => setIsOpen((isOpen)=>!isOpen)}
 
 const LearningMenu = ({track}) => {
-    // const [isOpen, setIsOpen] = useState(false)
-    // const {step,setStep} =useContext(StepContext)
 
-    const [url, setUrl]= useState('CbUjGxnJiVo')
-    console.log(url)
     const dispatch = useDispatch();
 
-    useEffect(() => {
-        dispatch(
-            changeUrl(url)
-        )
-      },[url]);
-    
-    const handleUrlChange =()=>{
-        dispatch(
-            videoSelectorSlice.actions.changeUrl({
-                video_url:url
-            })
-        )
-    }
     return (
        <>
          <Menu as="div" className="relative inline-block text-left py-1 w-full z-50">    
@@ -54,11 +36,10 @@ const LearningMenu = ({track}) => {
                 >
                     <Menu.Items className="origin-top-right right-0 my-1 focus:outline-none">
                     <div className="py-1">
-
                         {
                             track.track_steps.map((track_step,index)=>(
                                 <Menu.Item>
-                                <button key={index} onClick={()=>{setUrl(track_step.step.video_url);}} className="my-2 px-2 flex flex-row hover:bg-gray-100 ">
+                                <button key={index} onClick={()=>{ dispatch(changeUrl(track_step.step))}} className="my-2 px-2 flex flex-row hover:bg-gray-100 ">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 my-auto mx-1 fill-orange-400" viewBox="0 0 20 20" fill="currentColor">
                                         <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
                                     </svg>

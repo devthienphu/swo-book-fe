@@ -44,14 +44,14 @@ const Course = () => {
                 
                 <div className="flex flex-col ">
                 
-                    <h2 className="text-3xl font-bold my-4">{lession_for_newbie[0].data.course.title}</h2>
-                    <p>{lession_for_newbie[0].data.course.description}</p>
-                    <p className="text-xl font-bold my-4">Bạn sẽ học được gì?</p>
+                    <h2 className="text-3xl font-bold my-4">Azure Simple</h2>
+                    <p>Introduces you to the basics of cloud computing and Azure, and how to get started with Azure</p>
+                    <p className="text-xl font-bold my-4">What will you learn?</p>
                     <ul>
                     {
                         lession_for_newbie[0].data.course.will_learns.map((learns,index)=>(
                             <li key={index} className="flex flex-row my-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 fill-orange-600 mx-2" viewBox="0 0 20 20" fill="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 fill-black mx-2" viewBox="0 0 20 20" fill="currentColor">
                                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                 </svg>
                             {learns.content}</li>
@@ -60,7 +60,7 @@ const Course = () => {
                     </ul>
                     
 
-                    <p className="font-bold text-xl mt-8 mb-4">Nội dung khóa học</p>
+                    <p className="font-bold text-xl mt-8 mb-4">Course Material</p>
                     
                     {
                         lession_for_newbie[0].data.course.tracks.map((track,index)=>(
@@ -71,9 +71,9 @@ const Course = () => {
                 </div>
 
                 <div className="flex flex-col mx-auto lg:ml-32 ring-1 md:ring-0 ring-gray-200 items-center">
-                    <img src={pic1} alt="" className="rounded-xl max-w-sm hidden md:flex"></img>
-                    <p className="text-3xl mx-auto mt-4 text-orange-600">Miễn phí</p>
-                    <button onClick={()=>{navigate('/learning')}} className="rounded-3xl bg-orange-600 text-white text-lg w-40 mx-auto font-semibold p-2 my-4 hover:bg-orange-500">ĐĂNG KÍ HỌC</button>
+                    <img src="https://www.softwareone.com/_next/image?url=%2F-%2Fmedia%2Fimages%2Fdata-centric%2Fmotherboard-getty-1333524556-teaser.jpg%3Fh%3D405%26iar%3D0%26w%3D748%26hash%3D080E66BD0B32666C98C52504ECD69887&w=1920&q=90" alt="" className="rounded-xl max-w-sm hidden md:flex"></img>
+                    <p className="text-3xl mx-auto mt-4 text-blue-600 font-bold">Free</p>
+                    <button onClick={()=>{navigate('/learning')}} className="rounded-3xl bg-white text-white text-lg text-black border border-2 border-black w-40 mx-auto font-semibold p-2 my-4 hover:bg-black hover:text-white">JOIN NOW</button>
                     
                     <div className="flex flex-col">
                         <p className="text-gray-900 mx-16 flex flex-row my-1">
@@ -88,19 +88,19 @@ const Course = () => {
                         <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
                         <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd" />
                         </svg>
-                       {`Tổng số ${count} bài học`}</p>
+                       {`Total ${count} lessons`}</p>
 
                         <p className="text-gray-900 mx-16 flex flex-row my-1">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mx-4" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1H8z" clip-rule="evenodd" />
                         </svg>
-                        Thời lượng 03 giờ 25 phút</p>
+                        2 month with 2 hours per week</p>
 
                         <p className="text-gray-900 mx-16 flex flex-row my-1">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mx-4" viewBox="0 0 20 20" fill="currentColor">
                         <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
                         </svg>
-                        Học mọi lúc, mọi nơi</p>
+                        Can learn everywhere</p>
                     </div>
                    
                 </div>

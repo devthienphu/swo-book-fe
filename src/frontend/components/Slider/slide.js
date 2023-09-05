@@ -15,33 +15,12 @@ import study from '../../../img/study.png'
 
 const slidesData =[
     {
-        title:"F8 trên Youtube",
-        description:"F8 được nhắc đến ở mọi nơi, ở đâu có cơ hội việc làm cho nghề IT và có những con người yêu thích lập trình và F8 sẽ ở đó",
-        image:"https://files.fullstack.edu.vn/f8-prod/banners/Banner_03_youtube.png",
+        title:"SoftwareOne Book Store",
+        description:"Ưu đãi đặc biệt dành riêng cho hội viên và nhiều hơn thế nữa. Mua Online Giá Rẻ Bất Ngờ.",
+        image:"https://bizweb.dktcdn.net/100/313/410/products/15-tbn-tach-nen-min.png?v=1688539511690",
         color:"bg-gradient-to-r from-red-500 to-orange-400",
-        btn:"Truy cập kênh"
-    },
-    {
-        title:"Thành quả của học viên",
-        description:"Để đạt được kết quả tốt trong công việc ta cần xác định mục tiêu rõ ràng cho việc đó. Học lập trình cũng không ngoại lệ",
-        image:"https://files.fullstack.edu.vn/f8-prod/banners/Banner_01_2.png",
-        color:"bg-gradient-to-r from-violet-600 to-blue-500",
-        btn:"Xem thành quả"
-    },
-    {
-        title:"F8 trên facebook",
-        description:"F8 được nhắc đến ở mọi nơi, ở đâu có cơ hội việc làm cho nghề IT và có những con người yêu thích lập trình và F8 sẽ ở đó",
-        image:"https://files.fullstack.edu.vn/f8-prod/banners/Banner_04_2.png",
-        color:"bg-gradient-to-r from-blue-600 to-sky-400",
-        btn:"Truy cập nhóm"
-    },
-    {
-        title:"Học ReactJS miễn phí",
-        description:"Khóa học ReactJS từ cơ bản tới nâng cao. Kết quả của khóa học này là bạn có thể làm hầu hết các dự án thường gặp với ReactJS.",
-        image:"https://files.fullstack.edu.vn/f8-prod/banners/Banner_web_ReactJS.png",
-        color:"bg-gradient-to-r from-blue-600 to-purple-700",
-        btn:"Đăng kí ngay"
-    },
+        btn:"Mua ngay"
+    }
 ]
 
 const Slide = () => {
@@ -54,8 +33,7 @@ const Slide = () => {
             spaceBetween={0}
             slidesPerView={1}
             loop={true}
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 2500,disableOnInteraction: false }}    
+            pagination={{ clickable: true }}  
             >
 
             {
@@ -70,7 +48,7 @@ const Slide = () => {
                                 <div className="my-4 border-2 border-white rounded-2xl font-bold py-1 px-3 mr-auto hover:cursor-pointer hover:bg-white hover:text-black ">{slide.btn}</div>
                             </div>
 
-                            <div className="flex md:basis-1/3 ml-20">
+                            <div className="flex md:basis-1/3 ml-96">
                                 <img alt="" className="absolute h-4/5" src={slide.image}></img>
                             </div>
                         
