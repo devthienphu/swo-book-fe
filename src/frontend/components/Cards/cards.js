@@ -1,7 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'
+
 const Cards = ({courses}) => {
-    const navigate=useNavigate();
+    // const navigate=useNavigate();
     return (
         <>
         {/*md basic course */}
@@ -14,7 +14,7 @@ const Cards = ({courses}) => {
                              <div className="z-100 absolute flex w-full bg-black-rgba h-full top-0 rounded-xl overflow-hidden opacity-0 hover:opacity-100 ease-in-out duration-300">
                                 <button className="items-center m-auto rounded-full px-4 py-1 bg-white font-semibold 
                                 hover:-translate-y-1 hover:scale-110 ease-in-out delay-150 duration-300"
-                                >Xem khóa học</button>
+                                >Xem</button>
                              </div>
                             <img alt={course.item} className="rounded-lg block object-cover w-2/3 mx-auto" src={course.image}></img>
                         </div>

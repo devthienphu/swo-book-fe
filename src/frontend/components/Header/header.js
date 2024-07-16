@@ -1,9 +1,8 @@
 import React from 'react';
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
-import {useState} from 'react'
-import { useNavigate,NavLink } from 'react-router-dom'
+
+import {NavLink } from 'react-router-dom'
 
 import Notifycation from '../Notifycation/notifycation';
 import AccountMenu from '../AccountMenu/accountMenu';

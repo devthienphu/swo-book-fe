@@ -3,17 +3,17 @@ import { useState, useEffect, Fragment } from "react";
 import Cards from "../Cards/cards";
 import Slide from "../Slider/slide";
 import { getItems, postItems } from "../../api/appApi";
-const temp = [
-  {
-    id: 1,
-    category: "Học cụ",
-    item: "Máy Tính Casio Fx-880BTG - Màu Ðen",
-    unit: "Cái",
-    price: 839000,
-    image:
-      "https://nhasachphuongnam.com/images/thumbnails/500/500/detailed/235/4549526613692.jpg",
-  },
-];
+// const temp = [
+//   {
+//     id: 1,
+//     category: "Học cụ",
+//     item: "Máy Tính Casio Fx-880BTG - Màu Ðen",
+//     unit: "Cái",
+//     price: 839000,
+//     image:
+//       "https://nhasachphuongnam.com/images/thumbnails/500/500/detailed/235/4549526613692.jpg",
+//   },
+// ];
 
 function Courses() {
   const [itemList, setItemList] = useState([]);
@@ -49,7 +49,7 @@ function Courses() {
   }
 
   const createItem = async()=>{
-   const createItemRes = await postItems(itemData);
+    await postItems(itemData);
    closeModal()
   }
 

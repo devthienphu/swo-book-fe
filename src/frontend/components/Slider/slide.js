@@ -1,9 +1,7 @@
 // import Swiper core and requir,ed modules
 import { Autoplay, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useNavigate } from 'react-router-dom'
-import {useState,useRef} from 'react'
-import Slider from "react-slick";
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,7 +9,6 @@ import 'swiper/css/autoplay';
 
 
 
-import study from '../../../img/study.png'
 
 const slidesData =[
     {
