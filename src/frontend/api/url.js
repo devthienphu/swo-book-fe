@@ -1,1 +1,1 @@
-export const URL ="https://localhost:7136/api"
+export const URL ="https://webminar-web-app-be.azurewebsites.net/api"
