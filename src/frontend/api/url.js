@@ -1,1 +1,1 @@
-export const URL ="https://webminar-web-app-be.azurewebsites.net/api"
+export const URL ="https://webminar-web-app-be-us.azurewebsites.net/api"
